@@ -1,0 +1,30 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "11:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: react-native-web
+    versions:
+    - 0.14.10
+    - 0.14.11
+    - 0.14.12
+    - 0.14.13
+    - 0.15.0
+    - 0.15.1
+    - 0.15.3
+    - 0.15.5
+    - 0.15.6
+    - 0.15.7
+    - 0.16.0
+  - dependency-name: expo
+    versions:
+    - 40.0.1
+    - 41.0.0
+  - dependency-name: react
+    versions:
+    - 16.13.1
+    - 17.0.1
